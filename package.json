@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "cloudinary": "^2.1.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-handlebars": "^7.1.2",
+    "fs-extra": "^11.2.0",
+    "mongoose": "^8.3.2",
+    "multer": "^1.4.5-lts.1"
+  },
+  "name": "librarywebcomic",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "scripts": {
+    "dev": "nodemon src/app.js"
+  },
+  "author": "ejeGabo",
+  "license": "ISC",
+  "description": ""
+}
