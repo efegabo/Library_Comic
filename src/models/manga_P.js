@@ -5,7 +5,7 @@ const NewManga = new mongoose.Schema({
     description: String,
     num_caps:Number,
     emision: String, 
-    ref_capitulo:{type:mongoose.Schema.Types.ObjectId, ref:'capitulos'},
+    ref_capitulo:[{type:mongoose.Schema.Types.ObjectId, ref:'capitulos'}],
     imageUrl:String,
     public_id:String
 })
