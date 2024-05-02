@@ -26,7 +26,10 @@ app.set('views', join(__dirname, 'views'))
 
  app.engine(".hbs", hbs.engine)
  app.set("view engine", ".hbs")
+//midelwares 
 
+app.use(express.json());
+app.use(express.urlencoded({extended: false}))
  
 //subir imagenes con multer
 const storage =multer.diskStorage({

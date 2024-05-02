@@ -1,0 +1,9 @@
+
+    <form action="/next/imagenes/{{imgCap._id}}">
+        <button type="submit">Siguiente</button>
+
+    </form>
+    <p>{{imgCap.nombre_capitulo}}</p>
+    {{#each imgCap.ref_paginas}}
+    <img src="{{imageURL}}">
+    {{/each}}
