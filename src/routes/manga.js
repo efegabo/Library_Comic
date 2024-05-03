@@ -16,7 +16,8 @@ const router = Router();
 router.get('/formP',formPortada)
 router.get('/formC',formCapitulo)
 router.get('/formI',formImagenes)
-router.get('/index', indexPortada)
+router.get('/', indexPortada)
+//router.get('/index', indexPortada)
 router.get('/info/cap/:id', infoCpitulo)
 router.get('/cap/imgs/:id', imgsCaps)
 
