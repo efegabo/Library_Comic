@@ -90,7 +90,7 @@ export const sendCapitulo = async (req, res)=>{
         idport.ref_capitulo= idport.ref_capitulo.concat(capSave.map(cap => cap._id))
         await idport.save()
         console.log(capSave)
-        res.send("capitulo guardado")
+        res.redirect('/formC')
     }   catch(err){
         console.error("error al enviar el capitulo", err)
         res.status(500).send("error al enviar el capitulo")
@@ -126,7 +126,7 @@ export const sendImagenes = async(req, res)=>{
     await req.files.map(file=>fs.unlink(file.path))
     await idCapi.save()
     console.log("imagenes subidas")
-    res.send("imagenes guardadas")
+    res.redirect('/')
     }catch(err){
         console.error("error al enviar las imagenes", err)
     }
