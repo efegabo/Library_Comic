@@ -1,12 +1,14 @@
+import dotenv from 'dotenv'
+dotenv.config();
 import cloudinary from 'cloudinary'
 import fs from 'fs-extra';
 import  portada from '../models/manga_P.js'
 import capitulo from '../models/capitulo_M.js'
 import imgs from '../models/imagenes_C.js'
 cloudinary.config({ 
-  cloud_name: 'dagjjmraf', 
-  api_key: '923334742718338', 
-  api_secret: 'WK00Yxe6ExwJjbo0BlyZN6DHaiA' 
+  cloud_name: process.env.CLOUDINARY_CLOUD_NAME, 
+  api_key: process.env.CLOUDINARY_API_KEY, 
+  api_secret: process.env.CLOUDINARY_API_SECRET
 });
 
 export const formPortada =(req, res)=>{

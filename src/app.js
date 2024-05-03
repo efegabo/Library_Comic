@@ -1,6 +1,9 @@
 //imports
-import express from 'express'
 import dotenv from 'dotenv'
+import mongoose from 'mongoose';
+dotenv.config();
+import express from 'express'
+ 
 import multer from 'multer';
 import {dirname, join} from 'path'
 import path from 'path';
@@ -8,11 +11,12 @@ import { fileURLToPath } from 'url';
 import exphbs from 'express-handlebars'
 import manga_router from './routes/manga.js'
 
+
 //initialitationes 
- 
+  
 const app = express()
-const PORT = process.env.PORT||3000;
-dotenv.config();
+const PORT = process.env.PORT;
+ 
 import "./bd.js"
 const __dirname= dirname(fileURLToPath(import.meta.url))
 //setting
@@ -42,7 +46,8 @@ app.use(multer({storage}).array('images'))
 
 //routes
 app.use(manga_router)
-
+//archivos estaticos
+app.use(express.static(join(__dirname, "public")));
 //port
 app.listen(PORT,()=>{
     console.log("server on port:", PORT)

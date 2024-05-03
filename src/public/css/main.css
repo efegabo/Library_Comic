@@ -1,0 +1,50 @@
+@media(min-width: 1200px){
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; 
+    }
+    body{
+        background-color: red;
+    }
+     
+}
+
+@media(max-width: 420px){
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; 
+    }
+    .navigation{
+        background-color: aliceblue;
+    }
+    .bdy{
+        background-color: #333333;
+    }
+    .card_grip{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card{
+        margin: 10px;
+        width: 180px;
+        height: 250px;
+         
+         
+    }
+     
+    .card img{
+        width: 170px;
+        height: 100%;
+        border-radius: 10px;
+    }
+    .title_card{
+        
+        position: relative;
+        bottom: 60px;
+        color:black;
+        font-size: 20px;
+         
+    }
+}
