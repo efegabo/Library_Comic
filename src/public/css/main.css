@@ -15,19 +15,61 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box; 
-    }
+    }  
     .navigation{
-        background-color: aliceblue;
+        background-color: #228B22;
+        width: 100%;
+       
     }
+
+    .nav_ul a{
+        text-decoration: none;   
+        
+         
+     }
+     .nav_ul{
+        display: flex;
+        list-style-type: none;
+        
+
+     }
+     .nav_ul .it{
+        margin-top: 16px;
+        color: black;
+     }
+     .nav_ul .it a{
+         
+        color: black;
+     }
+     .nav_ul li{
+        margin: 12px;
+
+     }
+     #logo{
+         
+       margin-right: 36px;
+     }
+     #logo a{
+        color: #a80a0a;
+        font-size: 20px;
+       font-family: "Jaro", sans-serif;
+       
+     }
+     #logo i{
+        font-size: 20px;
+     }
+
     .bdy{
-        background-color: #333333;
+        background-color: #1b0909;
     }
     .card_grip{
+        
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
     .card{
-        margin: 10px;
+        
+        margin: 20px 10px 10px 17.5px;
         width: 180px;
         height: 250px;
          
@@ -37,14 +79,20 @@
     .card img{
         width: 170px;
         height: 100%;
-        border-radius: 10px;
+        border-radius: 7px;
+         
+    }
+    .card_cont_title{
+        background-color: #527e52;
+        position: relative;
+        bottom: 248px;
     }
     .title_card{
-        
-        position: relative;
-        bottom: 60px;
+        text-align: center;
         color:black;
-        font-size: 20px;
-         
+        font-size: 20px;  
+        text-decoration: none;    
+        font-weight: bold;
+        font-style: italic;
     }
 }

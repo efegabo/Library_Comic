@@ -8,8 +8,8 @@ mongoose.connect(process.env.MONGODB_URI, {useNewUrlParser:true, useUnifiedTopol
     console.log("Base de datos Establecida")
 }).catch((err)=>{
     console.log("Error al conectar a la base de datos", process.env.MONGODB_URI)
-     
     console.error(err)
 })
 
- 
+
+
