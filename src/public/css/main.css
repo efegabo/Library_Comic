@@ -1,14 +1,79 @@
-@media(min-width: 1200px){
+
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box; 
     }
     body{
-        background-color: red;
+        background-color: rgb(26 26 26);
+        font-family: "Roboto", sans-serif;
+
+    }
+    .card_grip{
+        text-align: center;
+    }
+
+    .card a{
+        text-decoration: none;
+        color: #e5e7eb;
+    }
+    .card img{
+        width: 10rem;
+        height: 15rem;
+    } 
+    .card{
+        background-color: rgb(18 18 18);
+        display: inline-block;
+        border-radius: 7px;
+        margin-top: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-bottom: 13px;
+
     }
      
-}
+    .main_menu{
+         
+        width: 10rem;
+        height: 11rem;
+        background-color: rgb(18 18 18);
+        
+        position: absolute;
+    
+         top: 3.9rem; /* Ajusta según sea necesario */
+         right: 2rem;
+       border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        cursor: pointer;
+        
+
+    }
+        .main_menu ul li{
+             padding-right: 2.3rem;
+        }
+
+     .main_menu2{
+        
+        width: 10rem;
+        height: 11rem;
+        background-color: rgb(18 18 18);
+        
+        position: absolute;
+    
+         top: 3.9rem; /* Ajusta según sea necesario */
+         right: 2rem;
+       border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        cursor: pointer;
+    }
+    .main_menu2 ul li{
+             padding-right: 2.3rem;
+        }
+
+     @media(max-width: 420px){
+
+     }
+/*
 
 @media(max-width: 420px){
     * {
@@ -196,4 +261,4 @@ background: linear-gradient(90deg, rgba(216,0,226,1) 0%, rgba(104,29,224,0.25253
         margin-top: 20px;
         font-family: "Play", sans-serif;
     }
-}
+}*/

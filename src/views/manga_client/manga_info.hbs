@@ -1,23 +1,26 @@
  <div class="cont_info">
   <div class="cont_info2">
-    <p><b>{{infoCapitul.title}}</b></p>
-    <hr style="margin: 0px 0px 10px 0px;">
  <img src="{{infoCapitul.imageUrl}}" alt="">
- <div class="desc_mang">
+ <p><b>{{infoCapitul.title}}</b></p>
+  
    <p><b>Genero:</b> {{infoCapitul.genero}}</p>
     <p><b>Emision:</b> {{infoCapitul.emision}}</p>
- </div>
+ 
  </div>
  <div class="descr">
   <p>{{infoCapitul.description}}</p>
   
   <h1>Capitulos</h1>
-  
-  {{#each infoCapitul.ref_capitulo}}
-    <a href="/cap/imgs/{{_id}}"><p>{{nombre_capitulo}}</p></a>
-    <hr>
+    <div class="descr2">
+         {{#each infoCapitul.ref_capitulo}}
+         <div class="descr_inf">
+           <a href="/cap/imgs/{{_id}}"><p>{{nombre_capitulo}}</p></a>
+    
+         </div>
+     
   {{/each}}
+    </div>
+  
  </div>
-   
  </div>
   

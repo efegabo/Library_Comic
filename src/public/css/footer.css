@@ -1,0 +1,13 @@
+.footer{
+		background-color: rgb(18 18 18);
+	font-family: "Roboto", sans-serif;   
+	color: rgb(156 163 175);
+	text-align: center;
+	padding-top: 1.2rem;
+	padding-bottom: 1.2rem;
+	margin-top: 0.9rem;
+	cursor: pointer;
+}
+.footer_2{
+	 margin-top: 0.5rem;
+}

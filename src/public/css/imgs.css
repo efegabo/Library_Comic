@@ -1,0 +1,36 @@
+.imgs a{
+	text-decoration: none;
+	font-size: 10px;
+	color: rgb(243 244 246);
+}
+.imgs p{
+	color: rgb(156 163 175);
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+form .btn{
+	padding: 10px;
+	border-radius: 10px;
+	border: none;
+	margin-left: 10px;
+	margin-top: 15px;
+	cursor: pointer;
+}
+.back{
+	margin-top: 20px;
+	margin-left: 15px;
+}
+.back:hover{
+	background-color: rgb(18 18 18);
+	width: 160px;
+	border-radius: 10px;
+}
+.back a{
+	display: inline-block;
+	padding: 10px;
+}
+.imgs img{
+	width: 80%;
+	margin-left: 130px;
+}

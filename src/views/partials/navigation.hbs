@@ -1,11 +1,16 @@
-<nav class=" navigation">
+<nav class=" navigation" id="nav">
         <ul class="nav_ul">
             
-           <li id="logo"><a   href="/">MangaClasic</a> <i class="bi bi-journals"></i> </li> 
-            <!--<li class="it"><a href="/">All Mangas </a>  </li>-->
-             <li class="it"><i class="bi bi-list"></i></li>
+           <li id="logo"><a   href="/">MangaLandia</a> <i class="bi bi-journals"></i> </li> 
+           {{#if user}}
+            <li class="it"><a href="/user/logout">Logout </a>  </li>
+            <li class="it"><i id="list2" class="bi-list" name="list22"></i></li>  
+            {{else}}
+             <li class="it"><i id="list" class="bi-list"></i></li>
+            <!--<li class="it lg"><a href="/user/signUp">Register </a>  </li>
+            <li class="it lgo"><a href="/user/login">Login </a>  </li>-->
              
+         {{/if}}
             <!-- <li><a href="/formP">Subir</a></li> -->
-
         </ul>
 </nav>

@@ -1,0 +1,18 @@
+#cont_log{
+	background-color: rgb(255 255 255);
+	margin: auto;
+	margin-top: 10rem;
+	margin-bottom: 10rem;
+	width: 27rem;
+	border-radius: 10px;
+
+}
+.cont_log2{
+	 padding-top: 1rem;
+	 padding-bottom: 2rem;
+}
+.cont_log2 form{
+	padding-left: 2rem;
+	padding-right: 2rem;
+	padding-top: 2rem;
+}
