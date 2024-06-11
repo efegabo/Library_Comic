@@ -1,8 +1,11 @@
 <div class="imgs">
     <p>{{imgCap.nombre_capitulo}}</p>
-    {{#each imgCap.ref_paginas}}
+    <div class="imgs2">
+        {{#each imgCap.ref_paginas}}
     <img src="{{imageURL}}">
     {{/each}}
+    </div>
+     
     <form action="/next/imagenes/{{imgCap._id}}">
         <button class="btn" type="submit">Siguiente</button>
 

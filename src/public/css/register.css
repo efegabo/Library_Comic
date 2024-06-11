@@ -1,0 +1,47 @@
+.register{
+	 margin-left: 30%;
+	 margin-right: 30%;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	background-color: rgb(255 255 255);
+	width: 35%;
+	border-radius: 10px;
+
+}
+h1{
+	text-align: center;
+	padding-top: 1rem;
+}
+label{
+	display: block;
+	text-align: left;
+	margin: 0.5rem;
+}
+
+ input{
+	padding-bottom: 0.5rem;
+	padding-top: 0.5rem;
+	margin-right: 20px;
+	margin-top: 0.3rem;
+	margin-bottom: 0.3rem;
+		width: 90%;
+}
+.btn{
+	margin-bottom: 20px;
+	margin-left: 25px;
+
+}
+ @media(max-width: 430px){
+ 	.register{
+ 		margin: auto;
+ 		margin-top: 3rem;
+     	margin-bottom: 4rem;
+ 		width: 90%;
+     } 
+     .btn{
+
+     	margin-left: 10px;
+     	margin-right: 10px;
+     	width: 63%;
+     }	
+ }

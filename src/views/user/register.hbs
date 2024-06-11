@@ -1,5 +1,7 @@
-<h1>Register</h1>
-<form action="/user/signUp" method="POST">
+<div class="register">
+    <h1>Register</h1>
+    <div class="register2">
+        <form action="/user/signUp" method="POST">
 <label>Nombre</label>
 <input type="text" name="name" value="{{name}}">
 <label>Email</label>
@@ -7,10 +9,15 @@
 <label>Password</label>
 <input type="password" name="password">
 <label>Confirm Password</label>
-<input type="password" name="confirm_password">
+<input  type="password" name="confirm_password">
 
-<input type="submit" name="">
+<input class="btn" type="submit" name="">
 </form>
+        
+    </div>
+ 
+</div>
+ 
 <script type="text/javascript">
 	{{#if error_msg}}
 	 Swal.fire({

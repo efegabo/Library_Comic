@@ -3,7 +3,7 @@
 	margin: auto;
 	margin-top: 10rem;
 	margin-bottom: 10rem;
-	width: 27rem;
+	width: 35%;
 	border-radius: 10px;
 
 }
@@ -11,8 +11,20 @@
 	 padding-top: 1rem;
 	 padding-bottom: 2rem;
 }
+.cont_log2 p{
+	text-align: center;
+}
 .cont_log2 form{
 	padding-left: 2rem;
 	padding-right: 2rem;
 	padding-top: 2rem;
 }
+ @media(max-width: 430px){
+ 	#cont_log{
+ 		 
+ 		width: 90%;
+ 		margin-top: 5rem;
+     	margin-bottom: 5rem;
+     } 
+     
+ }
