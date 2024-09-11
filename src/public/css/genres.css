@@ -1,0 +1,17 @@
+.geners{
+    background-color: rgb(156 163 175);;
+    width: 25%;
+    height: 39rem;
+   border-top-right-radius: 10px;
+   
+}
+.geners h2{
+    padding: 30px;
+   
+    font-size: 3vw
+}
+.cont_g li{
+padding: 15px;
+font-size: 1.6vw;
+cursor: pointer;
+}

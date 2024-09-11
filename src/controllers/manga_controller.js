@@ -184,6 +184,27 @@ export const imgsCaps = async(req, res)=>{
     }
      
 }
-//capitulo anterior
+ 
+
+//generos
+export const generoo = async(req,res)=>{
+    try{
+        const genero = req.query.genero
+         
+        const mangaL =  await portada.find({genero:{ $regex: new RegExp(genero, 'i') }}).lean()
+        if (mangaL.length === 0) {
+            console.log('No se encontraron mangas para este género.');
+          } else {
+            res.render('./manga_client/generos', { mangaL, genero });   
+            console.log('Mangas encontrados:', mangaL);
+          }
+         
+    }catch(err){
+        console.error("error", err)
+    }
+     
+    
+
+}
 
  

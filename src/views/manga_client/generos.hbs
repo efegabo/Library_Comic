@@ -1,0 +1,16 @@
+ <div class="bdy">
+ {{>generos title="Generos"}}
+
+
+     <div class="card_grip"> 
+  {{#each mangaL}}
+    <div class="card">
+    
+       <a href="/info/cap/{{_id}}"><img src="{{this.imageUrl}}" alt=""></a>  
+       <div class="card_cont_title">
+          <a href="/info/cap/{{_id}}" class="title_card"><strong><p>{{this.title}}</p></strong> </a>  
+       </div>
+</div>
+  {{/each}}
+   </div>
+   </div>

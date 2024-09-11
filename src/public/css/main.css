@@ -4,6 +4,10 @@
         padding: 0;
         box-sizing: border-box; 
     }
+    .bdy {
+        display: flex;
+        justify-content: flex-end; /* Alinea el div hacia la derecha */
+    }
     body{
         background-color: rgb(26 26 26);
         font-family: "Roboto", sans-serif;
@@ -11,6 +15,8 @@
     }
     .card_grip{
         text-align: center;
+        width: 75%;
+       
     }
 
     .card a{
