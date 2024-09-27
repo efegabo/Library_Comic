@@ -1,0 +1,20 @@
+   <div class="ult2" style=" text-align: center;
+        width: 100%;
+        margin-bottom:20px"
+        >
+    <h1>{{title}}</h1>
+{{#each capr}}
+<div class="card">
+    {{#if ref_paginas.[0]}}
+     <img src="{{ref_paginas.[0].imageURL}}" alt="Imagen del capítulo" />
+     {{else}}
+       <p>No hay imágenes disponibles</p>
+    {{/if}}
+       <div class="card_cont_title">
+              
+          <a href=" /cap/imgs/{{_id}}" class="title_card"><strong><p>{{nombre_capitulo}}</p></strong> </a> 
+          <strong><p>Visitas:{{visitas}}</p></strong> 
+       </div>
+</div>
+{{/each}}
+   </div>

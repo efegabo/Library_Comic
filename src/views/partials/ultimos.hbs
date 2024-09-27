@@ -1,0 +1,16 @@
+  <div class="ultimosS">
+     <h1>ultimos</h1>
+  {{#each mangas}}
+
+<div class="ult">
+    
+       <a href="/info/cap/{{_id}}"><img src="{{imageUrl}}" alt=""></a>  
+      <div class="ultT">
+        <a href="/info/cap/{{_id}}" class="ultT"><strong><p>{{title}}</p></strong> </a>  
+       <strong><p>{{genero}}</p></strong>
+      </div>
+        
+</div>
+ {{/each}}
+  </div>
+  

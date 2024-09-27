@@ -1,6 +1,7 @@
 .navigation{
 	background-color: rgb(18 18 18);
-	font-family: "Roboto", sans-serif;      
+	font-family: "Roboto", sans-serif;   
+	
 }
  
 .navigation a{
@@ -21,6 +22,14 @@ padding-left: 1rem;
 font-size: 25px;
 
 }
+.navigation .it3{
+	color: #e5e7eb;
+	padding-left: 1rem;
+	font-size: 17px;
+	
+	}
+
+
 .navigation .it{
 color: rgb(156 163 175);
 font-size: 20px;

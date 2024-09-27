@@ -9,5 +9,5 @@ const NewManga = new mongoose.Schema({
     ref_capitulo:[{type:mongoose.Schema.Types.ObjectId, ref:'capitulos'}],
     imageUrl:String,
     public_id:String
-})
+}, { timestamps: true }); // Esta opción agrega createdAt y updatedAt)
 export default mongoose.model("mangas", NewManga)

@@ -73,11 +73,15 @@ export const sendPortada= async(req, res)=>{
      console.log(req.files)
 }  
 
-export const formCapitulo = (req, res)=>{
-        res.render('capitulo_M')
+export const formCapitulo = async(req, res)=>{
+    const portadas = await portada.find({}).lean()
+    console.log(portadas)
+        res.render('capitulo_M', {portadas})
 }
 
 export const sendCapitulo = async (req, res)=>{
+
+    
     try {
         const {nombre_capitulo, numero_paginas, imgId} = req.body;
         const idport = await portada.findById(imgId)
@@ -96,10 +100,16 @@ export const sendCapitulo = async (req, res)=>{
         res.status(500).send("error al enviar el capitulo")
     }
     
+   
+
+
 }
 
 export const formImagenes =  (req, res)=>{
+
+    
     res.render("imagenes_C")
+
 }
 
 export const sendImagenes = async(req, res)=>{
@@ -131,18 +141,31 @@ export const sendImagenes = async(req, res)=>{
         console.error("error al enviar las imagenes", err)
     }
 }
-
+export const indexClient= async(req, res)=>{
+    const mangas = await portada.find().sort({ createdAt: -1 }).limit(6).lean();
+    const capr = await capitulo.find().sort({createdAt: -1}).limit(6).populate({
+        path:'ref_paginas',
+        select: 'imageURL'
+    }).lean();
+     
+    res.render('./manga_client/index_client',{mangas, capr})
+}
 export const indexPortada= async(req, res)=>{
     const portadas = await portada.find({}).lean()
-    res.render('./manga_client/index', {portadas})
+    const mangas = await portada.find().sort({ createdAt: -1 }).limit(5).lean();
+    res.render('./manga_client/index', {portadas, mangas})
 }
 
 export const infoCpitulo= async(req, res)=>{
+    /*este codigo quiere decir que al darle clic en una portada va aparecer su informacion relacionada
+    es decir su modelo relacionado en este caso "ref_capitulo" se relaciona a cada portada*/
     const infoCapitul = await portada.findById(req.params.id).populate(
 {       
     path:'ref_capitulo'
 }
     ).lean()
+     
+    //await capitulo.updateOne({_id: infoCapitul.ref_capitulo[0]._id}, { $inc: { visitas: 1 }})
     res.render('./manga_client/manga_info', {infoCapitul})
 }
 
@@ -150,9 +173,15 @@ export const imgsCaps = async(req, res)=>{
     const imgCap= await capitulo.findById(req.params.id).populate({
         path:'ref_paginas'
     }).lean()
+    if (imgCap) {
+        // Actualizar las visitas del primer capítulo relacionado
+        await capitulo.updateOne( { _id: req.params.id }, { $inc: { visitas: 1 } } );
+        /*esta es la sintaxis
+        db.collection.updateOne(filtro, actualización, opciones);*/
+    }
     res.render('./manga_client/imgs_Cap', {imgCap})
 
-    console.log(req.params.id)
+    console.log(imgCap)
 }
 
 
@@ -202,9 +231,20 @@ export const generoo = async(req,res)=>{
     }catch(err){
         console.error("error", err)
     }
-     
-    
-
 }
+/*
+//obtener las últimas publicaciones
+export const ultimasP = async(req, res)=>{
+    try {
+        // Ordenar por el campo createdAt en orden descendente y limitar los resultados
+        const mangas = await portada.find().sort({ createdAt: -1 }).limit(5).lean();
+        res.render('./manga_client/index', {mangas})
+        
+    } catch (error) {
+        res.status(500).json({ error: 'Error al obtener los mangas' });
+    }
 
- 
+    //timestamps: true: Automáticamente agrega los campos createdAt y updatedAt a tu esquema.
+    //sort({ createdAt: -1 }): Ordena los resultados por la fecha de creación más reciente.
+}
+ */

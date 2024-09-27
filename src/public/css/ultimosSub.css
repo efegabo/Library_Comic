@@ -1,0 +1,22 @@
+.ultimosS{
+    background-color: rgb(156 163 175);
+    width: 25%;
+    height: 33rem;
+    margin: 2%;
+   border-radius: 10px;
+}
+.ult{
+    display: flex;
+    margin-top: 16px;
+    margin-left: 15px;
+}
+.ultT{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-left: 8px;
+    color:blueviolet;
+}
+.ult img{
+    height: 70px;
+     
+}

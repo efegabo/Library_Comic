@@ -1,20 +1,18 @@
- 
-<div class="bdy">
-   <!--{{>generos title="Generos"}}-->
-   {{>ultimos mangas=mangas}}
-   <div class="card_grip">
-     {{#each portadas}}
+<div class="ult2" style=" text-align: center;
+        width: 100%;
+        margin-bottom:20px"
+        >
+         <h1>{{title}}</h1>
+    {{#each mangas}}
 
 <div class="card">
     
        <a href="/info/cap/{{_id}}"><img src="{{imageUrl}}" alt=""></a>  
        <div class="card_cont_title">
           <a href="/info/cap/{{_id}}" class="title_card"><strong><p>{{title}}</p></strong> </a>  
+          <strong><p>{{genero}}</p></strong>
+          
        </div>
 </div>
  {{/each}}
 </div>
-</div>
- {{>carrusel}}
- 
- 
