@@ -1,22 +1,47 @@
 .geners{
     background-color: rgb(156 163 175);;
-    width: 25%;
-    height: 39rem;
-   border-top-right-radius: 10px;
-   
+    width: 100%;
 }
 .geners h2{
     padding: 30px;
-   
     font-size: 3vw
+}
+.cont_g ul{
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+     
 }
 .cont_g li{
 padding: 15px;
-font-size: 1.6vw;
+font-size: 1.3vw;
 cursor: pointer;
+ 
+ 
+
 }
+.carsdG{
+    text-align: center;
+    margin-bottom: 25px;
+}
+ 
 @media(max-width: 450px){
     
-
-
+    .cont_g li{
+        padding: 15px;
+        font-size: 4vw;
+        cursor: pointer;
+            }
+            .geners h2{
+                padding: 30px;
+                font-size: 5vw
+            }
+}
+@media(max-width: 360px){
+    
+    .ult22{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+	     gap:1px;
+    }
 }
