@@ -99,28 +99,47 @@
   }
   
   .nav {
+    text-align: center;
     position: absolute;
+    width: 90%;
     bottom: 2rem;
     left: 50%;
+    top: 50%;
     transform: translateX(-50%);
     z-index: 5;
     user-select: none;
-  
+    
     & .btn {
       background-color: rgba(255,255,255,0.5);
-      color: rgba(0,0,0,0.7);
-      border: 2px solid rgba(0,0,0,0.6);
+      color: #FDCA40;
+      border: 2px solid #FDCA40;
       margin: 0 0.25rem;
       padding: 0.75rem;
       border-radius: 50%;
       cursor: pointer;
-  
+       
       &:hover {
         background-color: rgba(255,255,255,0.3);
       }
+
+    }
+    & .next{
+      margin-left: 55%;
     }
   }
-  
+
+  @media(max-width: 414px){
+    
+    .nav .btn{
+      border-radius: 100%;
+      width: 10%;
+    }
+    .nav .btn .next{
+     
+    }
+}
+
+ 
   @media (width > 650px) and (width < 900px) {
     .content {
       & .title        { font-size: 1rem; }

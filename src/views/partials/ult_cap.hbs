@@ -6,14 +6,15 @@
 {{#each capr}}
 <div class="card">
     {{#if ref_paginas.[0]}}
-     <img src="{{ref_paginas.[0].imageURL}}" alt="Imagen del capítulo" />
+
+       <a href="/cap/imgs/{{_id}}"><img src="{{ref_paginas.[0].imageURL}}" alt="Imagen del capítulo" /></a>
      {{else}}
        <p>No hay imágenes disponibles</p>
     {{/if}}
        <div class="card_cont_title">
               
           <a href=" /cap/imgs/{{_id}}" class="title_card"><strong><p>{{nombre_capitulo}}</p></strong> </a> 
-          <strong><p>Visitas:{{visitas}}</p></strong> 
+          <strong class="gr viw"><i class="bi bi-eye"></i><p>{{visitas}}</p></strong> 
        </div>
 </div>
 {{/each}}

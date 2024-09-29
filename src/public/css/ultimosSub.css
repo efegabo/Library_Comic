@@ -1,3 +1,23 @@
+.title_card:hover{
+     color: #FDCA40;
+}
+.ult22 h1{
+    color: #E6E8E6;
+}
+.ult2 h1{
+    color: #E6E8E6;
+}
+.gr{
+    color: #DF2935;
+}
+.viw{
+    display: flex;
+    justify-content: center;
+}
+.card:active img {
+    transform: scale(1.1); /* Agranda la imagen */
+    box-shadow: 0 0 20px yellow; /* Agrega sombra amarilla */
+  }
 .ultimosS{
     background-color: rgb(156 163 175);
     width: 25%;

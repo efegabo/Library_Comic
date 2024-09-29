@@ -1,15 +1,18 @@
 .geners{
-    background-color: rgb(156 163 175);;
+    background-color: #FDCA40;
     width: 100%;
+     
 }
 .geners h2{
     padding: 30px;
-    font-size: 3vw
+    font-size: 3vw;
+    color: #080708;
 }
 .cont_g ul{
     display: flex;
-    text-decoration: none;
-    text-align: center;
+    list-style-type: none;
+    justify-content: center;
+    
      
 }
 .cont_g li{
@@ -20,6 +23,17 @@ cursor: pointer;
  
 
 }
+li a {
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: #3772FF; 
+    font-weight: bold;
+  }
+  li a:hover {
+     
+    color: #DF2935; 
+     
+  }
+
 .carsdG{
     text-align: center;
     margin-bottom: 25px;
@@ -34,7 +48,7 @@ cursor: pointer;
             }
             .geners h2{
                 padding: 30px;
-                font-size: 5vw
+                font-size: 8vw
             }
 }
 @media(max-width: 360px){
@@ -45,3 +59,4 @@ cursor: pointer;
 	     gap:1px;
     }
 }
+

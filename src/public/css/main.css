@@ -4,10 +4,13 @@
         padding: 0;
         box-sizing: border-box; 
     }
+    
     .bdy {
         display: flex;
         justify-content: flex-end; /* Alinea el div hacia la derecha */
+       
     }
+   
     body{
         background-color: rgb(26 26 26);
         font-family: "Roboto", sans-serif;
@@ -38,6 +41,7 @@
     .card img{
         width: 10rem;
         height: 15rem;
+        
     } 
     .card{
         background-color: rgb(18 18 18);
@@ -49,6 +53,7 @@
         padding-bottom: 13px;
 
     }
+    
      
     .main_menu{
          
