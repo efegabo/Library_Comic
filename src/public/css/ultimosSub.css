@@ -19,7 +19,7 @@
     box-shadow: 0 0 20px yellow; /* Agrega sombra amarilla */
   }
 .ultimosS{
-    background-color: rgb(156 163 175);
+    background-color:#FDCA40;
     width: 25%;
     height: 33rem;
     margin: 2%;
@@ -38,5 +38,15 @@
 }
 .ult img{
     height: 70px;
+     
+}
+
+@media(max-width: 450px){
+    .card_grip{
+        text-align: center;
+        width: 100%;
+       
+    }
+    
      
 }

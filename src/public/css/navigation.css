@@ -18,7 +18,7 @@
 }
 .navigation #logo{
 color: #e5e7eb;
-padding-left: 1rem;
+padding-left: 1.4rem;
 font-size: 25px;
 
 }
@@ -58,12 +58,18 @@ color: rgb(255, 255, 255);
 }
  
 @media(max-width: 414px){
+	.nav_ul .bi-list{
+		position:relative;
+		bottom:46px;
+		font-size: 30px;
+	}
 	 	.navigation{
 			display: flex;
 		}
+		 
 		#logo{
 			 
-			 margin-right: 120px;
+			 margin-right: 180px;
 			 
 			}
 			.navigation .it3{

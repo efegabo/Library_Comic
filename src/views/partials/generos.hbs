@@ -1,14 +1,16 @@
  
 <div class="geners">
-    <h2 style="text-align: center;">{{title}}</h2>
+    
     <div class="cont_g">
-        <ul>
-        <li><a href="/genres/mangas?genero=shonnen">Accion</a> </li>
-        <li> <a href="/genres/mangas?genero=Aventura">Aventura</a></li>
-        <li> <a href="/genres/mangas?genero=Romance">Romance</a> </li>
-        <li><a href="/genres/mangas?genero=Suspenso">Suspenso</a> </li>
-        <li><a href="/genres/mangas?genero=asas">Terror</a> </li>
-    </ul>
+        
+       <select id="genreSelect" onchange="location = this.value;">
+    <option value="" disabled selected>Selecciona un género</option>
+    <option value="/genres/mangas?genero=shonnen">Acción</option>
+    <option value="/genres/mangas?genero=Aventura">Aventura</option>
+    <option value="/genres/mangas?genero=Romance">Romance</option>
+    <option value="/genres/mangas?genero=Suspenso">Suspenso</option>
+    <option value="/genres/mangas?genero=asas">Terror</option>
+</select>
     </div>
      
 </div>

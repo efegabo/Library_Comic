@@ -7,7 +7,7 @@
     
     .bdy {
         display: flex;
-        justify-content: flex-end; /* Alinea el div hacia la derecha */
+        justify-content: center; /* Alinea el div hacia la derecha */
        
     }
    
@@ -56,11 +56,11 @@
     
      
     .main_menu{
-         
+        border: solid 1px #FDCA40;
         width: 10rem;
         height: 11rem;
         background-color: rgb(18 18 18);
-        
+        z-index: 1000;
         position: absolute;
     
          top: 3.9rem; /* Ajusta según sea necesario */
@@ -68,7 +68,6 @@
        border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
         cursor: pointer;
-        
 
     }
         .main_menu ul li{
@@ -92,9 +91,23 @@
     .main_menu2 ul li{
              padding-right: 2.3rem;
         }
-
+        .serc{
+            width: 100%;
+            height: 60px;
+            background-color: #FDCA40;
+        }
+        .serc input{
+            width: 50%;
+            margin-left: 20px;
+            margin-top: 12px;
+            border-color:#3772FF ;
+            border-radius: 5px;
+        }
      @media(max-width: 420px){
-        
+        .serc input{
+            width: 80%;
+           
+        }
        
      }
 /*
