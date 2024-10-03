@@ -10,7 +10,7 @@ import{formPortada,
        indexClient,
        infoCpitulo,
        imgsCaps,
-       next, generoo} from '../controllers/manga_controller.js'
+       next, generoo, buscarM} from '../controllers/manga_controller.js'
        import{isAuthenticated} from '../helper/auth.js'  
 
 const router = Router();
@@ -24,6 +24,7 @@ router.get('/', indexClient)
 router.get('/info/cap/:id',infoCpitulo)
 router.get('/cap/imgs/:id',imgsCaps)
 router.get('/genres/mangas', generoo)
+router.get('/search', buscarM)
  
 router.post("/send/portada", sendPortada)
 router.post("/send/capitulo", sendCapitulo)

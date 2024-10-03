@@ -232,6 +232,27 @@ export const generoo = async(req,res)=>{
         console.error("error", err)
     }
 }
+//busqueda 
+export const buscarM =async (req, res)=>{
+    const { query } = req.query;
+    console.log('Término de búsqueda:', query);
+    let portadas;
+    if (query) {
+      // Si hay un término de búsqueda, filtrar resultados
+     portadas = await portada.find({
+        $or: [
+          { title: { $regex: query, $options: 'i' } },
+          { description: { $regex: query, $options: 'i' } },
+          { genero: { $regex: query, $options: 'i' } }
+        ]
+      }).lean();
+    } else {
+      // Si no hay búsqueda, cargar todas las portadas por defecto
+      portadas = await portada.find().limit(20);
+    }
+
+    res.render('./manga_client/index', { portadas });
+}
 /*
 //obtener las últimas publicaciones
 export const ultimasP = async(req, res)=>{

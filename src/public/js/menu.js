@@ -40,9 +40,10 @@ lis1.addEventListener('click', function (e) {
 	 div2.innerHTML=`
 			<div >
 			 <ul class=" ">           
-             <li class="it lgo"><a href="">Generos</a>  </li>
+               
             <li class="it lg"><a href="">Home</a>  </li>
             <li class="it lgo"><a href="">Donar</a>  </li>
+			<li class="it lgo"><a href="/user/logout">Logout</a>  </li>
  
  
         </ul>

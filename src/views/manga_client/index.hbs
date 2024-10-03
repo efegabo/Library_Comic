@@ -1,10 +1,14 @@
   <div class="serc">
-      <input type="text" placeholder="Buscar">
+        <form action="/search" method="GET">
+    <input type="text" name="query" placeholder="Buscar" required>
+    <button type="submit">Buscar</button>
+  </form>
     </div>
 <div class="bdy">
    <!--{{>generos title="Generos"}}-->
     
    <div class="card_grip">
+     {{#if portadas.length}}
      {{#each portadas}}
 
 <div class="card">
@@ -15,6 +19,9 @@
        </div>
 </div>
  {{/each}}
+ {{else}}
+ <p>No se encontraron mangas.</p>
+    {{/if}}
 </div>
 </div>
  {{>carrusel}}
