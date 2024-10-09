@@ -80,8 +80,6 @@ export const formCapitulo = async(req, res)=>{
 }
 
 export const sendCapitulo = async (req, res)=>{
-
-    
     try {
         const {nombre_capitulo, numero_paginas, imgId} = req.body;
         const idport = await portada.findById(imgId)
@@ -99,17 +97,22 @@ export const sendCapitulo = async (req, res)=>{
         console.error("error al enviar el capitulo", err)
         res.status(500).send("error al enviar el capitulo")
     }
-    
-   
-
-
 }
 
-export const formImagenes =  (req, res)=>{
+export const formImagenes = async(req, res)=>{
 
+    const Capitup = await portada.find({}).populate(
+        {       
+            path:'ref_capitulo'
+        }
+            ).lean()
+         Capitup.forEach(manga => {
+                console.log(manga.ref_capitulo); // Imprime los capítulos de cada manga
+            });
+        
     
-    res.render("imagenes_C")
-
+    res.render("imagenes_C",{Capitup})
+      
 }
 
 export const sendImagenes = async(req, res)=>{

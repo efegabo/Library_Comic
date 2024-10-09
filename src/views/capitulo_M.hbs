@@ -1,18 +1,13 @@
-<div>
 	Capitulos
 	<form action="/send/capitulo" method="POST" enctype="multipart/form-data" >
 		Nombre capitulo:<input type="text" name="nombre_capitulo" class="" >
 		Numero de paginas:<input type="number" name="numero_paginas" class="" >
-		Id portada<input type="text" name="imgId" class="" >
+		<label>ID de la Portada:</label>
+    <select name="imgId" id="imgId">
+      {{#each portadas}}
+        <option value="{{_id}}">{{title}} - {{_id}}</option>
+      {{/each}}
+    </select>
 	<button>Send Cap</button>
     </form>
 
-<div class="descr2"> 
-	 {{#each portadas}}
-          <strong><p>{{title}}</p></strong> 
-		   <strong><p>{{_id}}</p></strong>   
-       
-
- {{/each}}
- </div>
-    </div>	

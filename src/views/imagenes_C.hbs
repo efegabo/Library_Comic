@@ -4,14 +4,15 @@
 		<input type="file" name="images" id="inputGroupFile01" multiple>
 		<label for="inputGroupFile01"> escoger archivos</label>
 	<button>subir fotos</button>
-	<div class="descr2">  
- {{#each infoCapitul.ref_capitulo}}
-       
-           <p>{{nombre_capitulo}}</p>
-		    <p>{{_id}}</p>
-    
-         
-     
+		 <select name="imgsId" id="imgsId">
+				{{#each Capitup}}
+      
+          {{#each this.ref_capitulo}}
+		  	 <option value="{{this._id}}">{{this.nombre_capitulo}} - {{this._id}}</option>
+            
+          {{/each}}
   {{/each}}
-  </div>
+  </select>
 	</form>
+
+	 
