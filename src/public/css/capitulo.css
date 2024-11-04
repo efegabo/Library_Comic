@@ -44,6 +44,7 @@
 	background-color:rgb(26 26 26) ;
 	padding-bottom: 0.7rem;
 	padding-top: 0.7rem;
+	padding-left: 10px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 	border-radius: 8px;
@@ -51,7 +52,8 @@
 
 }
 .descr_inf:hover{
-	background-color: #666;
+	background-color: #FDCA40;
+
 }
 
 .descr h1{

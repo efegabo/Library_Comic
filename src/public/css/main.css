@@ -22,18 +22,25 @@
        
     }
     
-    .imgPromo {
-        width: 70%;
-         margin: auto;
-         margin-top: 30px;
-         margin-bottom: 40px;
-
-    }
-    .imgPromo img{
-        width: 100%;
-        border-radius: 20px;
-    }
-
+        .imgPromo{
+            margin: 10px 0 10px 15%;
+            width: 70%;
+            height: 450px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .imgPromo img{
+            width: 10%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 1px solid #FDCA40;
+            transition: all ease-in-out 0.5s;
+        }
+        .imgPromo img:hover{
+            width: 25%;
+        }
     .card a{
         text-decoration: none;
         color: #e5e7eb;
@@ -74,6 +81,7 @@
              padding-right: 2.3rem;
         }
 
+        
       
     .main_menu2 ul li{
              padding-right: 2.3rem;
@@ -83,34 +91,26 @@
             height: 60px;
             background-color: #FDCA40;
         }
-        .serc input{
+    
+     @media(max-width: 428px){
+        .serc form{
+           display: flex;
+           justify-content: center;
+        }
+        .imgPromo img{
+            width: 20%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 1px solid #FDCA40;
+            transition: all ease-in-out 0.5s;
+        }
+        .imgPromo img:hover{
             width: 50%;
-            margin-left: 20px;
-            margin-top: 12px;
-            border-color:#3772FF ;
-            border-radius: 5px;
         }
-        .serc button{
-            margin-right: 20px;
-            padding-top: 6px;
-            padding-bottom: 6px;
-            padding-left: 9px;
-            padding-right: 9px;
-            background-color: #DF2935;
-            border-radius: 5px;
-            border: none;
-            border: 1px solid #080708;
-        }
-     @media(max-width: 420px){
-        .serc{
-            height: 90px;
-        }
-        .serc input{
-            width: 80%;
-           
-        }
-       
      }
+     
+      
 /*
 
 @media(max-width: 420px){

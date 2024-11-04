@@ -29,10 +29,10 @@
     margin: auto;
     overflow: hidden;
     position: relative;
-    width: 95%;
+     
   }
   .slider::before, .slider::after {
-    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to right, #FDCA40 0%, rgba(255, 255, 255, 0) 100%);
     content: "";
     height: 100px;
     position: absolute;
